@@ -1,0 +1,193 @@
+/*general*/
+@font-face {
+  font-family: 'Antenna-Regular';
+  src: url(./fonts/Antenna-Regular.ttf );
+}
+:root { /* color que se van a usar*/
+  --azul_1: #2aa6d8;
+  --azul_2: #0081b1;
+  --azul_3: #c6e1f2;
+  --white: #ffffff;
+  --gris: #8a9597;
+  --black: #000000;   
+}
+body{ /* aqui se modifica la tipografia general de la pagina y el color de fondo */  
+  font-family: 'Antenna-Regular';
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+  background-color: var(--azul_3);
+}
+.small, small {
+  font-size: 12px !important;
+}
+/*CABECERA*/
+.logo {
+  width: 90px;
+  height: auto;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+/*FIN DE CABECERA*/
+#slider { 
+  padding: 0rem 0rem 1rem;
+  width:100%;
+}
+.img-carusel{
+  height: 330px;
+}
+@media(max-width: 575.98px){
+  #slider h4{
+    font-size: 1rem;
+  } 
+}
+/*SECCION DE BIENVENIDA*/
+.contenedor-1 {
+  padding-bottom: 2rem;
+}
+.bienvenida{
+  width: 100%;
+  background-color: #3e606f;
+  margin-top: 2px;
+  color: #ffffff;
+  text-align: center;
+}
+.bienvenida h3{
+  font-size: 40px;
+  padding: 2rem 0 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.bienvenida p{
+  font-size: 14px;
+  padding: 0 4rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+/*FIN DE SECCION DE BIENVENIDA*/
+/*SECCION DE SOBRE NOSOTROS*/
+.nosotros{
+  padding-bottom: 80px;
+}
+.nosotros > .contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.foto-equipo{
+  width: 100%;
+  max-width: 570px;
+}
+.foto-equipo img{
+  width: 100%;
+}
+.conocenos{
+  text-align: center;
+  padding: 15px 0px;
+  max-width: 570px;
+}
+.conocenos p:nth-child(1){
+  color: #3c1c22;
+  padding-bottom: 0;
+  border-bottom: 1px solid #a2a2a2;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.conocenos h3{
+  padding: 1rem 0;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.conocenos p:nth-child(3){
+  font-size: 14px;
+  color:#3c1c22;
+  padding-bottom: 0;
+}
+.conocenos p:nth-child(4){
+  font-size: 14px;
+  padding-bottom: 0;
+}
+.conocenos a{
+  font-size: 15px;
+  color: #0e96dd;
+}
+@media all and (min-width:769px){
+  .nosotros{
+    padding-top: 80px;
+  }
+  .foto-equipo{
+    margin-right: 30px;
+  }
+  .conocenos{
+    padding-left: 30px;
+    text-align: left;
+  }
+}
+/*FIN DE SECCION DE SOBRE NOSOTROS*/
+.barra_superior{ /* color de la barra superior  */
+  background-color: var(--white) !important;
+}
+.navbar{ /* grososor de la barra superior */
+  min-height: 5rem;
+  width: 100%;
+}
+.nav-link{ /* variable que modifica las opciones de la barra superior  */
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+ion-icon { /*  asignar color al icono  */
+  color: var(--black);
+}
+a { /*  aqui se realiza el cambio de color que la a tener las opciones de inicio,temas y redes socilales  */
+  color: var(--gris);
+}
+a:hover{ /*  no se muy bien como funciona pero esta relacionada con la de arriba*/
+  color: var(--gris);
+  text-decoration: none;
+}
+.pie{
+  background-color: white;
+  color:black;
+}
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+  position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top:0;
+  left:100%;
+  margin-top:-6px;
+}
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+.fondoa{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fondob{
+  background-color: var(--azul_3);
+}
