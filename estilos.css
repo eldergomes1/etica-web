@@ -50,6 +50,12 @@ body{ /* aqui se modifica la tipografia general de la pagina y el color de fondo
   height: 400px;
 }
 
+.img-principal-ACM
+{
+  background: url('imagen/codigo_ACM.jpg') no-repeat;
+  background-size: cover;
+}
+
 .img-principal{
   height: 300px;
 }
